@@ -4,7 +4,7 @@
 
 # 体验
 
-![二维码](README_files/1.jpg)
+![](README_files/1.jpg)
 
 # 运行
 
