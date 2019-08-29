@@ -1,0 +1,47 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "相隔天数计算"
+			}
+		}, {
+			"path": "pages/calculation/calculation",
+			"style": {
+				"navigationBarTitleText": "日期推算"
+			}
+		}, {
+			"path": "pages/calendar/calendar",
+			"style": {
+				"navigationBarTitleText": "农历转换"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "日期计算器",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#353535",
+		"selectedColor": "#09bb07",
+		"backgroundColor": "#FAFAFA",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"text": "相隔天数",
+			"iconPath": "static/EMR-gray.png",
+			"selectedIconPath": "static/EMR-green.png"
+		}, {
+			"pagePath": "pages/calculation/calculation",
+			"text": "日期推算",
+			"iconPath": "static/spinner.png",
+			"selectedIconPath": "static/spinner-green.png"
+		}, {
+			"pagePath": "pages/calendar/calendar",
+			"text": "农历转换",
+			"iconPath": "static/time-change.png",
+			"selectedIconPath": "static/time-change-green.png"
+		}]
+	}
+}

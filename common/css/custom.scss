@@ -1,0 +1,17 @@
+$spacer: 32upx;
+$enable-print-styles: false;
+$border-width: 2upx;
+$border-radius: 8upx;
+$border-radius-lg: 9.6upx;
+$border-radius-sm: 6.4upx;
+$rounded-pill: 1600upx;
+$primary: #09bb07;
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+$grid-breakpoints: map-remove($grid-breakpoints, "sm", "md", "lg","xl");
+$box-shadow-sm: 4upx 8upx rgba($black, .075);
+$box-shadow: 0 16upx 32upx rgba($black, .15);
+$box-shadow-lg: 0 32upx 96upx rgba($black, .175);
+// Optional
+@import "../../node_modules/bootstrap/scss/utilities";
