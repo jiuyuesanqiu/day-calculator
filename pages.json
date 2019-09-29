@@ -19,7 +19,8 @@
 			"path": "pages/countDown/countDown",
 			"style": {
 				"navigationBarTitleText": "倒计时",
-				"navigationStyle":"custom"
+				"navigationStyle":"custom",
+				"disableScroll": true
 			}
 		}
 	],
