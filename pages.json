@@ -15,6 +15,12 @@
 			"style": {
 				"navigationBarTitleText": "农历转换"
 			}
+		}, {
+			"path": "pages/countDown/countDown",
+			"style": {
+				"navigationBarTitleText": "倒计时",
+				"navigationStyle":"custom"
+			}
 		}
 	],
 	"globalStyle": {
@@ -42,6 +48,18 @@
 			"text": "农历转换",
 			"iconPath": "static/time-change.png",
 			"selectedIconPath": "static/time-change-green.png"
+		}, {
+			"pagePath": "pages/countDown/countDown",
+			"text": "时光沙漏",
+			"iconPath": "static/countDown.png",
+			"selectedIconPath": "static/countDown-green.png"
+		}]
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "时光沙漏",
+			"path": "pages/countDown/countDown"
 		}]
 	}
 }
