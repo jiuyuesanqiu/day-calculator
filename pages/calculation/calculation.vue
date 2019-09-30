@@ -16,9 +16,6 @@
 				<view class="text-xl text-primary">{{apart}}天后是{{timeAfter}}</view>
 			</view>
 		</view>
-		<view class="fixed-bottom">
-			<ad unit-id="adunit-57e7bb610eee4387"></ad>
-		</view>
 	</view>
 </template>
 
@@ -26,7 +23,6 @@
 	import {
 		calendar
 	} from "../../common/js/calendar.js"
-	let interstitialAd = null
 	export default {
 		data() {
 			let now = new Date();
@@ -44,17 +40,6 @@
 			timeAfter() {
 				return this.formate(new Date((this.timeValue.getTime() + this.apart * 86400000)));
 			}
-		},
-		onLoad() {
-			// #ifdef MP-WEIXIN
-			if (wx.createInterstitialAd) {
-				interstitialAd = wx.createInterstitialAd({
-					adUnitId: 'adunit-71cfd52ace790d0a'
-				})
-				interstitialAd.onError((err) => {})
-				interstitialAd.onClose((res) => {})
-			}
-			// #endif
 		},
 		onShow() {
 			// #ifdef MP-WEIXIN

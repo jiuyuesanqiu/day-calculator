@@ -10,9 +10,6 @@
 				</picker>
 			</view>
 		</view>
-		<view class="fixed-bottom">
-			<ad unit-id="adunit-57e7bb610eee4387"></ad>
-		</view>
 	</view>
 </template>
 
@@ -20,7 +17,6 @@
 	import {
 		calendar
 	} from "../../common/js/calendar.js"
-	let interstitialAd = null
 	export default {
 		data() {
 			return {
@@ -29,24 +25,6 @@
 				startTimeValue: 0,
 				endTimeValue: 0
 			}
-		},
-		onLoad() {
-			// #ifdef MP-WEIXIN
-			if (wx.createInterstitialAd) {
-				interstitialAd = wx.createInterstitialAd({
-					adUnitId: 'adunit-71cfd52ace790d0a'
-				})
-				interstitialAd.onError((err) => {})
-				interstitialAd.onClose((res) => {})
-			}
-			// #endif
-		},
-		onShow() {
-			// #ifdef MP-WEIXIN
-			if (interstitialAd) {
-				interstitialAd.show().catch((err) => {})
-			}
-			// #endif
 		},
 		methods: {
 			startChange({
