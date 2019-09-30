@@ -21,7 +21,6 @@
 </template>
 
 <script>
-let interstitialAd = null;
 export default {
 	data() {
 		return {

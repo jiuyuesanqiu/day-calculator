@@ -42,11 +42,6 @@
 			}
 		},
 		onShow() {
-			// #ifdef MP-WEIXIN
-			if (interstitialAd) {
-				interstitialAd.show().catch((err) => {})
-			}
-			// #endif
 		},
 		methods: {
 			timeChange({
